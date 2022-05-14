@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FC0C1E74-2BE0-A8BC-4F0C-82D0F2EAB9A4}</ProjectGuid>
     <RootNamespace>PhysX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
@@ -55,7 +56,7 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
-    <OutDir>./../../../bin/vc15win64\</OutDir>
+    <OutDir>./../../../bin/vc16win64\</OutDir>
     <IntDir>./x64/PhysX/debug\</IntDir>
     <TargetExt>.dll</TargetExt>
     <TargetName>PhysX3DEBUG_x64</TargetName>
@@ -90,7 +91,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
-      <ImportLibrary>./../../../Lib/vc15win64/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>./../../../Lib/vc16win64/$(TargetName).lib</ImportLibrary>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
@@ -100,7 +101,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
-    <OutDir>./../../../bin/vc15win64\</OutDir>
+    <OutDir>./../../../bin/vc16win64\</OutDir>
     <IntDir>./x64/PhysX/checked\</IntDir>
     <TargetExt>.dll</TargetExt>
     <TargetName>PhysX3CHECKED_x64</TargetName>
@@ -134,7 +135,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
-      <ImportLibrary>./../../../Lib/vc15win64/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>./../../../Lib/vc16win64/$(TargetName).lib</ImportLibrary>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
@@ -144,7 +145,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
-    <OutDir>./../../../bin/vc15win64\</OutDir>
+    <OutDir>./../../../bin/vc16win64\</OutDir>
     <IntDir>./x64/PhysX/profile\</IntDir>
     <TargetExt>.dll</TargetExt>
     <TargetName>PhysX3PROFILE_x64</TargetName>
@@ -178,7 +179,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
-      <ImportLibrary>./../../../Lib/vc15win64/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>./../../../Lib/vc16win64/$(TargetName).lib</ImportLibrary>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
@@ -188,7 +189,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
-    <OutDir>./../../../bin/vc15win64\</OutDir>
+    <OutDir>./../../../bin/vc16win64\</OutDir>
     <IntDir>./x64/PhysX/release\</IntDir>
     <TargetExt>.dll</TargetExt>
     <TargetName>PhysX3_x64</TargetName>
@@ -222,7 +223,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
-      <ImportLibrary>./../../../Lib/vc15win64/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>./../../../Lib/vc16win64/$(TargetName).lib</ImportLibrary>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
@@ -640,12 +641,12 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="./../../../../PxShared/src/compiler/vc15win64/PxPvdSDK.vcxproj">
+    <ProjectReference Include="./../../../../PxShared/src/compiler/vc16win64/PxPvdSDK.vcxproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="./../../../../PxShared/src/compiler/vc15win64/PxFoundation.vcxproj">
+    <ProjectReference Include="./../../../../PxShared/src/compiler/vc16win64/PxFoundation.vcxproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
@@ -690,7 +691,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="./../../../../PxShared/src/compiler/vc15win64/PxTask.vcxproj">
+    <ProjectReference Include="./../../../../PxShared/src/compiler/vc16win64/PxTask.vcxproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
